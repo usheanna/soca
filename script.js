@@ -8,8 +8,8 @@ const menu = document.querySelector('.menu');
 // pada saat tombol di click, tambahkan class aktif pada class menu
 // saat diklik lagi, maka class aktif dihilangkan dari class menu (toggle)
 //tombol.addEventListener('click', () => {
-    menu.classList.toggle('aktif');
-});
+ //   menu.classList.toggle('aktif');
+//});
 
 function handleGetFormData() {
     const name = document.getElementById('name').value;
