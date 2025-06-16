@@ -1,0 +1,419 @@
+/* Tambahkan kode CSS kalian di file ini */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 120px;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  line-height: 1.6;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-subtitle {
+  font-size: 10px;
+  color: orange;
+  margin-top: 2px;
+}
+
+.logo-wrapper i {
+  color: orange;
+  font-size: 20px;
+}
+
+.navbar {
+  background: white;
+  margin: 0;
+  padding: 20px 30px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 14pt;
+  font-weight: bold;
+  text-decoration: none;
+  color: orange;
+  padding: 8px 15px;
+  border: 2px solid orange;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  background: orange;
+  color: white;
+  transform: scale(1.05);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tombol {
+  display: none;
+  font-size: 14pt;
+  background: orange;
+  color: white;
+  border: 0;
+  padding: 5px 8px;
+}
+
+.tombol:hover {
+  cursor: pointer;
+}
+
+.menu {
+  margin: 0;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding-left: 0;
+  margin-right: 10px;
+}
+
+.menu li a {
+  padding: 10px;
+  color: orange;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menu li a i {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .tombol {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+  }
+
+  .menu.aktif {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  .menu.aktif li {
+    display: block;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .menu.aktif li a {
+    color: orange;
+    font-size: 16px;
+    width: 100%;
+  }
+
+}
+
+/* Gambar */
+.responsive-image {
+  width: 100%;
+  max-width: 500px;
+  /* Adjust as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  /* Center the image */
+  border-radius: 8px;
+  /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Optional: Add a subtle shadow */
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  width: 100%;
+  margin-top: 30px;
+}
+
+footer .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+
+h2 {
+  color: orange;
+}
+
+label {
+  font-size: 10pt;
+  color: #555;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  padding: 12px;
+  width: 100%;
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+#submit-form {
+  background: orange;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 16px;
+  width: 100%;
+}
+
+#submit-form:hover {
+  background: #ff8c00;
+}
+
+.hero-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+#description {
+  color: #666;
+  font-size: 18px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.cta-button-container {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #description {
+    text-align: center;
+  }
+  
+  .cta-button-container {
+    text-align: center;
+  }
+}
+
+.ayo-baca-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: orange;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.ayo-baca-button:hover {
+  background-color: #ff8c00;
+  transform: translateX(5px);
+}
+
+.ayo-baca-button i {
+  font-size: 16px;
+}
+
+/* Book Selection Styles */
+.book-selection {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.book-container {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.book-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.book-header h2 {
+  margin: 0;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  width: 40px;
+  height: 40px;
+  border: 2px solid orange;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: orange;
+  color: white;
+}
+
+.lihat-semua {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.lihat-semua:hover {
+  color: #45a049;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-cover {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.book-illustration {
+  font-size: 40px;
+  opacity: 0.8;
+}
+
+.book-card h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+@media screen and (max-width: 768px) {
+  .book-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .book-cover {
+    height: 150px;
+  }
+  
+  .book-illustration {
+    font-size: 30px;
+  }
+  
+  .book-card h3 {
+    font-size: 12px;
+  }
+}
